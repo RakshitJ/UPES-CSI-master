@@ -18,6 +18,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+<<<<<<< HEAD
 import com.upescsi.upes_csi.fragments.AboutFragment;
 import com.upescsi.upes_csi.fragments.EventsFragment;
 
@@ -26,6 +27,11 @@ import com.upescsi.upes_csi.R;
 import com.upescsi.upes_csi.fragments.TeamFragment;
 
 import static com.upescsi.upes_csi.R.*;
+=======
+import com.upescsi.upes_csi.fragments.EventsFragment;
+import com.upescsi.upes_csi.fragments.NavigationDrawerFragment;
+import com.upescsi.upes_csi.R;
+>>>>>>> upstream/master
 
 
 public class MainActivity extends ActionBarActivity
@@ -46,21 +52,37 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         setContentView(layout.activity_main);
 
         // toolbar
         toolbar = (android.support.v7.widget.Toolbar) findViewById(id.action_bar);
+=======
+        setContentView(R.layout.activity_main);
+
+        // toolbar
+        toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.action_bar);
+>>>>>>> upstream/master
         setSupportActionBar(toolbar);
         toolbar.setBackgroundColor(Color.parseColor("#ff455a64"));
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
+<<<<<<< HEAD
                 getSupportFragmentManager().findFragmentById(id.navigation_drawer);
+=======
+                getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
+>>>>>>> upstream/master
         mTitle = getTitle();
 
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
+<<<<<<< HEAD
                 id.navigation_drawer,
                 (DrawerLayout) findViewById(id.drawer_layout), this);
+=======
+                R.id.navigation_drawer,
+                (DrawerLayout) findViewById(R.id.drawer_layout), this);
+>>>>>>> upstream/master
     }
 
     @Override
@@ -74,6 +96,7 @@ public class MainActivity extends ActionBarActivity
             case 1:
                 Toast.makeText(this, "Contact", Toast.LENGTH_LONG).show();
                 break;
+<<<<<<< HEAD
 
             case 2:
                 Toast.makeText(this, "About", Toast.LENGTH_LONG).show();
@@ -83,12 +106,18 @@ public class MainActivity extends ActionBarActivity
                 break;
 
 
+=======
+            case 2:
+                Toast.makeText(this, "About", Toast.LENGTH_LONG).show();
+                break;
+>>>>>>> upstream/master
         }
     }
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
+<<<<<<< HEAD
                 mTitle = getString(string.events);
                 break;
             case 2:
@@ -101,6 +130,16 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(string.about);
                 break;
 
+=======
+                mTitle = getString(R.string.events);
+                break;
+            case 2:
+                mTitle = getString(R.string.contact);
+                break;
+            case 3:
+                mTitle = getString(R.string.about);
+                break;
+>>>>>>> upstream/master
         }
     }
 

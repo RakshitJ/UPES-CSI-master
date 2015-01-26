@@ -52,7 +52,11 @@ public class EventItemsTask extends AsyncTask<Void, Void, Void> {
             eventTitleItems = new ArrayList<String>();
             eventSummaryItems = new ArrayList<String>();
             eventImageURLs = new ArrayList<String>();
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> upstream/master
             document = Jsoup.connect(URL_EVENTS).get();
             // Using elements to get class data
             Elements headers = document.select("h4[class=lh_inherit m_md_bottom_5 d_sm_none d_xs_block]");

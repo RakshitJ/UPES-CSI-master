@@ -16,6 +16,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+<<<<<<< HEAD
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -28,6 +29,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+=======
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+>>>>>>> upstream/master
         </activity>
     </application>
 

@@ -23,7 +23,11 @@ public class EventHandler extends SQLiteOpenHelper {
     private static final String COLUMN_EVENT_SUMMARY = "summary";
 
     public EventHandler(Context context, String name,
+<<<<<<< HEAD
                         SQLiteDatabase.CursorFactory factory, int version) {
+=======
+                     SQLiteDatabase.CursorFactory factory, int version) {
+>>>>>>> upstream/master
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
     }
 

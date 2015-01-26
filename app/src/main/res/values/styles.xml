@@ -10,6 +10,7 @@
         <item name="colorPrimaryDark">@color/statusBarColor</item>
     </style>
 
+<<<<<<< HEAD
 
     <style name="Animations" parent="android:Animation" />
 
@@ -30,4 +31,6 @@
 
 
 
+=======
+>>>>>>> upstream/master
 </resources>
