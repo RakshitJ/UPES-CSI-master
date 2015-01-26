@@ -96,7 +96,7 @@ public class EventsFragment extends Fragment {
                     summaryItems.add(event.getEventSummary());
                 }
                 eventsAdapter = new EventsAdapter(getActivity(), android.R.layout.activity_list_item,
-                        titleItems, summaryItems);
+                        titleItems, summaryItems, null);
                 gridView.setAdapter(eventsAdapter);
             } else {
                 Toast.makeText(getActivity(), "Connect to internet..", Toast.LENGTH_LONG).show();
